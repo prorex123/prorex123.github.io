@@ -1,0 +1,22 @@
+<html>
+<title>Discord Letter Generator Thing</title>
+<p>This is not my generator... I think it might be flubb's but I'm not sure. I'm just hosting it so I can use it easily.
+<p><script>
+	function generate(){
+		const alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
+		const text = document.querySelector('textarea').value.toLowerCase().split('');
+		let texto = [];
+		for(var x of text){
+			if(alphabet.includes(x)){
+				texto.push(':regional_indicator_'+x+': ');
+			}else{
+				texto.push(x);
+			}
+		}
+		document.querySelector('.output').innerHTML = texto.join('');
+	}
+</script>
+<textarea></textarea>
+<button onclick="generate()">make magic</button>
+<div class="output"></div>
+</html>
