@@ -1,0 +1,32 @@
+body,td,th {
+	font-family: Verdana, Geneva, sans-serif;
+}
+a {
+	font-style: italic;
+}
+body {
+	background-image: url(images/FOX.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center; 
+}
+footer {
+	position: absolute;
+    left: -11;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    overflow: hidden;
+}
+.grow:hover
+{
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+}
+.grow2:hover
+{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+}
